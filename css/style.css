@@ -1,9 +1,14 @@
+body {
+  background: rgb(238, 174, 202);
+  background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+}
+
 .result {
-  color: rgb(14, 13, 14);
+  color: rgb(15, 15, 15);
 }
 
 .button {
-  background-color: #4c8baf;
+  background-color: #03293e;
   border: none;
   color: rgb(250, 245, 245);
   padding: 15px 32px;
@@ -16,32 +21,48 @@
 h1,
 h2 {
   text-align: center;
-  color: black;
+  color: rgb(15, 15, 15);
   size: 24px;
+  width: auto;
 }
 
+@media (max-width: 768px) {
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 
+.content-buttons {
+  width: 100%;
+}
 
-.conten-buttons {
+.buttons {
   display: flex;
-  justify-content: center;
   gap: 4px;
-
+  width: 100%;
+  justify-content: center;
 }
+
 
 .button {
   display: inline-block;
   padding: 15px 25px;
   font-size: 24px;
   cursor: pointer;
+  width: 180px;
   text-align: center;
   text-decoration: none;
   outline: none;
   color: #fff;
-  background-color: #8c8c8e;
+  background-color: #9797a4;
   border: none;
   border-radius: 15px;
   box-shadow: 0 9px #bbb9b9;
+}
+
+.items-buttons {
+  width: 90%;
 }
 
 .button:hover {
@@ -54,6 +75,6 @@ h2 {
   transform: translateY(4px);
 }
 
-body {
-  background-color: hsla(89, 43%, 51%, 0.3);
+.contenedor {
+  width: 100%;
 }
